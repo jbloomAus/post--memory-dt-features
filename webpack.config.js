@@ -11,7 +11,7 @@ module.exports = {
 		extensions: [".js", ".html", ".npy"],
 	},
 	output: {
-		path: __dirname + "/public",
+		path: __dirname + "/docs",
 		filename: "[name].bundle.js",
 		chunkFilename: "[name].[id].js",
 	},
@@ -77,7 +77,7 @@ module.exports = {
 	devServer: {
 		historyApiFallback: true,
 		static: {
-			directory: path.join(__dirname, 'public'),
+			directory: path.join(__dirname, 'docs'),
 		},
 	},
 	devtool: "inline-source-map",
