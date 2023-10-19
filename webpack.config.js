@@ -63,15 +63,21 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: "./src/index.ejs",
-			filename: "index.html",
-			chunks: ["index"],
+		  template: "./src/index.ejs",
+		  filename: "index.html",
+		  chunks: ["index"],
+		  inject: true,
+		  files: {
+			css: [
+			  '../static/styles.css', // Replace with actual path
+			],
+		  }
 		}),
 		new CopyWebpackPlugin({
-			patterns: [
-				{ from: "static/" },
-				// Add more patterns here if needed
-			],
+		  patterns: [
+			{ from: "static/" },
+			// Add more patterns here if needed
+		  ],
 		}),
 	],
 	devServer: {
