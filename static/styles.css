@@ -120,7 +120,7 @@ d-contents nav ul {
 }
 
 d-contents nav > div {
-  display: sticky;
+  display: block;
   outline: none;
   margin-bottom: 0.5em;
 }
@@ -134,11 +134,11 @@ d-contents nav > div > a:hover, d-contents nav > ul > li > a:hover {
   text-decoration: none;
 }
 
-d-contents nav {
+/* d-contents nav {
   position: sticky !important;
   top: 0;
   z-index: 100; /* Optional, but ensures the nav stays above other elements */
-}
+/* } */
 
 /* recolor all links with #0068c9, and make border bottom same color */
 
@@ -146,3 +146,4 @@ d-article a {
   color: #0068c9;
   border-bottom: 1px solid #0068c9;
 }
+
