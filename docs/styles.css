@@ -142,6 +142,10 @@ d-contents nav > div > a:hover, d-contents nav > ul > li > a:hover {
 
 /* recolor all links with #0068c9, and make border bottom same color */
 
+d-title {
+  background-color: hsl(0, 0%, 97%);
+}
+
 d-article a {
   color: #0068c9;
   border-bottom: 1px solid #0068c9;
